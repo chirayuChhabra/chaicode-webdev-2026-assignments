@@ -14,7 +14,6 @@ This project is an assignment to create a personal resume web page using only HT
 - Lists created with `<ul>` and `<li>` for grouping related items.
 - Tabular data presented using `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, and `<td>`.
 - No CSS or JavaScript pure HTML.
-- Focus on accessibility and semantic markup.
 
 ## Output Screenshots
 
