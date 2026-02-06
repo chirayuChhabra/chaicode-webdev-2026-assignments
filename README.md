@@ -5,31 +5,28 @@ All environment / tooling files are for my local setup and are **not** part of t
 
 ---
 
-## For Assignment Reviewers
+## Quick View (Website)
 
-- Please **only open**:
-  - The `assignments/` folder
-  - Then the specific assignment folder (for example: `assignments/01-html-resume-page-assignment/`)
-  - Then the source code files inside that folder (HTML, CSS, JS, etc.)
+You can visit:  [Click Me](https://chirayuchhabra.github.io/chaicode-webdev-2026-assignments/)
 
-- Please **do not open**, run, or review these files as part of the assignment:
-  - `devbox.json`
-  - `devbox.lock`
-  - `.envrc`
-  - Any other environment / tooling / config files I may add later
-
-These are **only environment settings** for my development workflow (Devbox, direnv, etc.), not part of the assignment solution.
+This is the main website for all the assignments. From there, click whatever assignment you want to see and you will be there.
 
 ---
 
-## How to View an Assignment
+## For Assignment Reviewers
 
-1. Go to the `assignments/` directory.
-2. Choose the assignment folder you want to review.
-3. Open the main HTML (or other relevant) file in that folder.
-4. The expected output / page will be displayed in the README.md files for specific assignments.
+Please **only open**:
+- The `assignments/` folder
+- Then the specific assignment folder (for example: `assignments/01-html-resume-page-assignment/`)
+- Then the source code files inside that folder (HTML, CSS, JS, etc.)
 
-Each assignment is self-contained inside its own folder.
+Please **do not open**, run, or review these files as part of the assignment:
+- `devbox.json`
+- `devbox.lock`
+- `.envrc`
+- Any other environment / tooling / config files I may add later
+
+These are **only environment settings** for my development workflow (Devbox, direnv, etc.), not part of the assignment solution.
 
 ---
 
