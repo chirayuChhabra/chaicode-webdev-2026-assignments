@@ -269,6 +269,73 @@ nav {
     }
 }
 
+/* --- css/testimonials.css --- */
+.statement {
+    margin-top: calc(var(--space-6) + var(--space-6));
+    font-size: var(--font-size-xxlarge);
+    font-weight: var(--font-weight-light);
+    text-align: center;
+}
+
+.testimonials {
+    margin-top: var(--space-6);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: var(--space-2);
+
+    & .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: var(--space-4);
+
+        background-color: var(--color-bg-secondary);
+        border-color: var(--color-border-primary);
+        padding-inline: var(--space-2);
+        padding-block: var(--space-2);
+        border-radius: var(--border-radius-mid);
+        border-width: var(--space-2);
+
+        & .quote {
+            font-weight: var(--font-weight-light);
+            line-height: 25px;
+            font-size: 1rem;
+        }
+
+        & .reviewer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: var(--space-3);
+            padding-block: var(--space-1);
+
+            & .name {
+                display: flex;
+                flex-direction: column;
+
+                & h6 {
+                    font-size: 1rem;
+                    font-weight: var(--font-weight-light);
+                }
+
+                & p {
+                    padding-top: var(--space-thin);
+                    font-size: 0.8rem;
+                    font-weight: var(--font-weight-light);
+                    color: var(--color-text-faint);
+                }
+            }
+
+            & img {
+                width: 40px;
+                height: auto;
+                margin-inline: var(--space-2);
+                border-radius: var(--border-radius-mid);
+            }
+        }
+    }
+}
 /* --- css/changelog.css --- */
 
 /* --- css/endcta.css --- */
@@ -280,5 +347,3 @@ nav {
 /* --- css/joinus.css --- */
 
 /* --- css/recents.css --- */
-
-/* --- css/testimonials.css --- */
