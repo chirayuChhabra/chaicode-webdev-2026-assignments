@@ -1,15 +1,3 @@
-@import url("./css/changelog.css");
-@import url("./css/clients.css");
-@import url("./css/demo.css");
-@import url("./css/endcta.css");
-@import url("./css/footer.css");
-@import url("./css/frontier.css");
-@import url("./css/hero.css");
-@import url("./css/joinus.css");
-@import url("./css/navbar.css");
-@import url("./css/recents.css");
-@import url("./css/testimonials.css");
-
 * {
     margin: 0;
     padding: 0;
@@ -86,3 +74,211 @@ button {
         cursor: pointer;
     }
 }
+
+/* --- css/navbar.css --- */
+
+nav {
+    padding-inline: unset;
+    background-color: var(--color-bg-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--space-3);
+    gap: var(--space-6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    & .logo {
+        width: var(--logo-width);
+        height: auto;
+    }
+
+    & .nav-links {
+        margin-left: var(--space-6);
+        margin-right: var(--space-3);
+        display: flex;
+        align-items: center;
+        gap: var(--space-5);
+        & a {
+            color: var(--color-text-primary);
+            text-decoration: none;
+            font-weight: var(--font-weight-light);
+            font-size: var(--font-size-small);
+
+            &:hover {
+                color: var(--color-text-tertiary);
+            }
+        }
+    }
+
+    & .nav-buttons {
+        display: flex;
+        align-items: center;
+        gap: var(--space-1);
+
+        & .sign-in {
+            background-color: var(--color-bg-primary);
+            padding-inline: var(--space-2);
+            padding-block: var(--space-1);
+
+            &:hover {
+                background-color: var(--color-bg-secondary);
+            }
+        }
+
+        & .download {
+            color: var(--color-bg-primary);
+            background-color: var(--color-text-primary);
+            padding-inline: var(--space-3);
+            padding-block: var(--space-1);
+            &:hover {
+                background-color: var(--color-text-tertiary);
+            }
+        }
+    }
+}
+
+/* --- css/hero.css --- */
+
+.hero {
+    padding-block: var(--space-6) var(--space-3);
+
+    & .heading {
+        margin-top: var(--space-5);
+        font-size: var(--font-size-large);
+        font-weight: var(--font-weight-light);
+    }
+
+    & .cta-download {
+        display: flex;
+        align-items: center;
+        font-size: var(--font-size-medium);
+        font-weight: var(--font-weight-thin);
+        margin-top: var(--space-3);
+        color: var(--color-bg-primary);
+        background-color: var(--color-text-primary);
+        padding-inline: var(--space-4);
+        padding-block: var(--space-2);
+        &:hover {
+            background-color: var(--color-text-tertiary);
+        }
+    }
+
+    & .main-img {
+        margin-top: var(--space-6);
+        max-width: var(--img-size-full);
+        height: auto;
+        border-radius: var(--border-radius-small);
+    }
+}
+
+/* --- css/clients.css --- */
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: var(--space-5);
+    padding-inline: unset;
+
+    & .statement {
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-thin);
+    }
+
+    & .cards {
+        margin-top: var(--space-3);
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr;
+        gap: var(--space-1);
+
+        & .logoCard {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--color-border-secondary);
+            border-radius: var(--border-radius-small);
+            padding-block: calc(var(--space-4) + var(--space-thin));
+            padding-inline: var(--space-5);
+            background-color: var(--color-bg-secondary);
+            min-height: calc(var(--space-5) + var(--space-1));
+
+            & .logo {
+                height: calc(var(--space-5) + 0.25rem);
+                width: auto;
+                max-width: 160%;
+            }
+        }
+    }
+}
+
+/* --- css/demo.css --- */
+
+.demo {
+    margin-top: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+
+    & .section {
+        border-radius: var(--border-radius-mid);
+        background-color: var(--color-bg-secondary);
+        display: flex;
+        flex-direction: row-reverse;
+        & .explanation {
+            width: var(--img-size-small);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-inline: var(--space-3);
+            gap: 0px;
+
+            & h3 {
+                padding-block: 0px;
+                margin: unset;
+                font-weight: var(--font-weight-light);
+                font-size: var(--font-size-large);
+            }
+
+            & p {
+                padding-inline-start: 0px;
+                margin-top: var(--space-thin);
+                font-size: calc(var(--space-3) + var(--space-thin));
+                font-weight: 200;
+                color: var(--color-text-faint);
+            }
+
+            & a {
+                padding-inline-start: 0px;
+                color: var(--color-anchor);
+            }
+        }
+    }
+
+    & .section2 {
+        flex-direction: row;
+    }
+
+    & img {
+        width: var(--img-size-mid);
+        margin-block: var(--space-3);
+        margin-inline: var(--space-2);
+        border-radius: var(--border-radius-mid);
+    }
+}
+
+/* --- css/changelog.css --- */
+
+/* --- css/endcta.css --- */
+
+/* --- css/footer.css --- */
+
+/* --- css/frontier.css --- */
+
+/* --- css/joinus.css --- */
+
+/* --- css/recents.css --- */
+
+/* --- css/testimonials.css --- */
