@@ -271,7 +271,6 @@ nav {
 
             & a {
                 padding-inline-start: 0px;
-                color: var(--color-anchor);
             }
         }
     }
@@ -401,8 +400,7 @@ nav {
                 }
 
                 & a {
-                    margin-top: var(--space-4);
-                    color: var(--color-anchor);
+                    padding-inline-start: 0px;
                 }
             }
 

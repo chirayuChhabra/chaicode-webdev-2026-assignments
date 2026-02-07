@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --color-bg-primary: #14120b;
+    --color-bg-secondary: #1b1912;
+    --color-text-primary: #ececec;
+    --color-text-secondary: #13120a;
+    --color-text-tertiary: #d7d6d5;
+    --color-text-faint: #999894;
+    --color-border-primary: #34332c;
+    --color-border-secondary: #201e17;
+    --color-anchor: #f54e00;
+
+    /* spacing */
+    --space-thin: 0.25rem;
+    --space-1: 0.5rem;
+    --space-2: 0.75rem;
+    --space-3: 1rem;
+    --space-4: 1.5rem;
+    --space-5: 2rem;
+    --space-6: 4rem;
+
+    /* layout */
+    --inline-padding-body: clamp(1rem, 6vw, 4rem);
+    --logo-width: clamp(5rem, 8vw, 6rem);
+    --img-size-full: 100%;
+    --img-size-mid: 60%;
+    --img-size-small: 40%;
+
+    /* font */
+
+    --main-font:
+        system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+    --font-weight-thin: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* others */
+    --font-size-small: 0.85rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.7rem;
+    --font-size-xlarge: 2rem;
+    --font-size-xxlarge: 2.5rem;
+
+    --border-radius-small: 0.25rem;
+    --border-radius-mid: 0.3rem;
+    --border-radius-inf: 9999px;
+}
+
+.glass {
+    /* 1. Semi-transparent background (Crucial) */
+    background: rgba(255, 255, 255, 0.1);
+
+    /* 2. The Blur Effect (The Magic) */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+
+    /* 3. Border to define edges */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    /* 4. Optional: Shadow for depth */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* RESET */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    background-image: url("assets/bg-light.svg");
+    height: 100vh; /* 100% of the viewport height */
+}
+
+/* --- THE MAGIC NAVBAR --- */
+nav {
+    position: fixed; /* 1. Must stick to the viewport */
+    top: 0;
+    width: 100%;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+
+    /* 1. Base Glass Effect */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: none; /* Removing bottom border helps the fade effect */
+
+    & .main-logo > img {
+        width: 8vw;
+    }
+}
