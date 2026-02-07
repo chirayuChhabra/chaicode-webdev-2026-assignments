@@ -13,8 +13,9 @@
     --color-text-tertiary: #d7d6d5;
     --color-text-faint: #999894;
     --color-border-primary: #34332c;
-    --color-border-secondary: #201e17;
+    --color-border-secondary: #211e18;
     --color-anchor: #f54e00;
+    --color-anchor-secondary: #bd400a;
 
     /* spacing */
     --space-thin: 0.25rem;
@@ -75,6 +76,19 @@ button {
     }
 }
 
+.link {
+    font-family: var(--main-font);
+    color: var(--color-anchor);
+    text-decoration: none;
+    padding: var(--space-1);
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-medium);
+
+    &:hover {
+        color: var(--color-anchor-secondary);
+        cursor: pointer;
+    }
+}
 /* --- css/navbar.css --- */
 
 nav {
@@ -226,6 +240,7 @@ nav {
     & .section {
         border-radius: var(--border-radius-mid);
         background-color: var(--color-bg-secondary);
+        border: 1px solid var(--color-border-secondary);
         display: flex;
         flex-direction: row-reverse;
         & .explanation {
@@ -292,11 +307,12 @@ nav {
         gap: var(--space-4);
 
         background-color: var(--color-bg-secondary);
-        border-color: var(--color-border-primary);
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--color-border-secondary);
         padding-inline: var(--space-2);
         padding-block: var(--space-2);
         border-radius: var(--border-radius-mid);
-        border-width: var(--space-2);
 
         & .quote {
             font-weight: var(--font-weight-light);
@@ -348,6 +364,7 @@ nav {
 
     & .frontier-statement {
         font-size: var(--font-size-large);
+        font-weight: var(--font-weight-light);
         padding-block: var(--space-3);
     }
 
@@ -362,6 +379,7 @@ nav {
             /*align-items: center;*/
 
             background-color: var(--color-bg-secondary);
+            border: 1px solid var(--color-border-secondary);
             border-radius: var(--border-radius-mid);
 
             & .content {
@@ -400,6 +418,49 @@ nav {
 }
 
 /* --- css/changelog.css --- */
+.changelog {
+    display: flex;
+    flex-direction: column;
+
+    & .changelog-statement {
+        font-size: var(--font-size-large);
+        font-weight: var(--font-weight-light);
+    }
+
+    & .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-1);
+        margin-block: var(--space-4);
+
+        & .card {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--color-bg-secondary);
+            padding-inline: var(--space-3);
+            padding-block: var(--space-3);
+            border-radius: var(--border-radius-small);
+            border: 1px solid var(--color-border-secondary);
+
+            & .version {
+                display: flex;
+                gap: var(--space-1);
+                margin-bottom: var(--space-3);
+            }
+            & .pill {
+                display: inline-block;
+                padding: 0.1rem var(--space-2);
+                border-radius: var(--border-radius-inf);
+                border: 0.1rem solid;
+                color: var(--color-text-faint);
+                font-size: var(--font-size-small);
+            }
+            & .date {
+                color: var(--color-text-faint);
+            }
+        }
+    }
+}
 
 /* --- css/endcta.css --- */
 
