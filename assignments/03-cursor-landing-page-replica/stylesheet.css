@@ -421,6 +421,7 @@ nav {
 .changelog {
     display: flex;
     flex-direction: column;
+    margin-bottom: var(--space-6);
 
     & .changelog-statement {
         font-size: var(--font-size-large);
@@ -462,10 +463,32 @@ nav {
     }
 }
 
+/* --- css/joinus.css --- */
+.joinus {
+    margin-top: var(--space-6);
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg-secondary);
+    padding-block: var(--space-3);
+    padding-inline: var(--space-3);
+    border-radius: var(--border-radius-mid);
+
+    & .joinus-statement {
+        font-size: var(--space-4);
+        font-weight: var(--font-weight-light);
+        padding-inline: var(--space-2);
+        margin-bottom: var(--space-1);
+    }
+
+    & img {
+        width: 65vw;
+        height: auto;
+        border-radius: var(--border-radius-small);
+    }
+}
+
 /* --- css/endcta.css --- */
 
 /* --- css/footer.css --- */
-
-/* --- css/joinus.css --- */
 
 /* --- css/recents.css --- */
